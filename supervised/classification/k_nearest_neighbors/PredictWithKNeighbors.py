@@ -29,7 +29,7 @@ if __name__ =='__main__':
     classifier = train_with(training_data, training_label)
     print('K Neighbors classifier accuracy : ' + str(classifier.score(test_data, test_label)))
 
-    # data that we need to classify
+    # Data that we need to classify
     new_data = np.array([[2, 1, 1, 3, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 1, 2],
                          [3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2]])
     new_data = new_data.reshape(len(new_data), -1)
